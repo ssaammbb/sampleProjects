@@ -1,0 +1,37 @@
+<% include ../partials/header %>
+<% include ../partials/menu %>
+
+    <div class="container">
+		<br>
+		<br>
+		<div class="row">
+			<div class="col-4">
+				<img class="rounded img-fluid" src="../resources/img/enemy.PNG" alt="Badguy">
+			</div>
+			<div class="col-8">
+				<div class="jumbotron">
+				  <h1 class="display-4">High Scores</h1>
+				  
+				  <table class="table table-bordered" id="stats_table">
+					<tr>
+						<th class="align-bottom text-center">Username</th>
+						<th class="align-bottom text-center">Score</th>
+					</tr>
+
+					<% if (scores) { 
+						var score_rows = '';
+						 scores.forEach(function(item){
+							score_rows += '<tr><td>' + item.username + '</td>';
+							score_rows += '<td>' + item.score + '</td></tr>';
+						});%>
+					<%- score_rows %>
+					<% } %>
+				</table>
+
+					<hr>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<% include ../partials/footer %>
