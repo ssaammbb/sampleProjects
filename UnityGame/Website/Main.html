@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=0.5" charset="UTF-8">
+        <title>WorldBuild</title>
+        <style>
+        </style>
+        
+        <!-- Bootstrap CDNs -->
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="./main.js"></script>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <!-- A grey horizontal navbar that becomes vertical on small screens -->
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <!-- Links -->
+        <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+            <a class="nav-link" href="#" onclick="mainTab('waybreak')">Waybreak</a>
+        </li>
+        <!-- <li class="nav-item">
+            <a class="nav-link" href="#" onclick="hide('tab2')">Tab 2</a>
+        </li> -->
+        </ul>
+        <ul class="navbar-nav">
+            <a class="navbar-brand" href="https://github.com/gitRot">
+                <img src="" alt="Icon" style="width:40px;">
+            </a>
+        </ul>
+        </nav>
+        <div class="container-fluid" id="waybreak">
+            <div class="banner" text-a>
+                Waybreak
+            </div>
+            <div id="waybreakNav" class="sidenav">
+                <a href="#" onclick="waybreakTab('home')">Home</a>
+                <a href="#" onclick="waybreakTab('terrain')">Terrain</a>
+                <a href="#">Clients</a>
+                <a href="#">Contact</a>
+              </div>
+            <div class="page" id="home">
+                Waybreak is a city management RTS with rpg elements. You begin the game by choosing a founding party to 
+                settle an outpost in no-man's-land between several large empires. As you develop the outpost you will attract
+                more settlers and trade, but with more wealth and power you must be ready to defend what you've built from
+                the dangers of the wilderness, bandits, foreign armies, and legendary monsters.
+            </div>
+            <div class="page" id="terrain" hidden=true>
+                Terrain<br>
+                Choose your planet's year length and your settlement's latitude. (Equatorial to Polar)
+            </div>
+        </div>
+        <div class="container-fluid" id="tab2" hidden=true>
+            tab2
+        </div>
+    </body>
+</html>
