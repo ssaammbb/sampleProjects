@@ -1,0 +1,56 @@
+/*@tailrec
+        def listxHelper(lis: List[(Double,Double)], acc: List[Double], n: Int): List[Double] = {
+            val l = lis.length - 1
+            if(n == l) {
+                acc
+            } else {
+                val newLis = acc :+ lis(n)._1
+                val newN = n + 1
+                listxHelper(lis, newLis, newN)
+            }
+        }
+
+        @tailrec
+        def listyHelper(lis: List[(Double,Double)], acc: List[Double], n: Int): List[Double] = {
+            val l = lis.length - 1
+            if(n == l) {
+                acc
+            } else {
+                val newLis = acc :+ lis(n)._2
+                val newN = n + 1
+                listyHelper(lis, newLis, newN)
+            }
+        }
+
+        val xAcc = List[Double](); val yAcc = List[Double]()
+        val xlist = listxHelper(cList,xAcc,0)
+        val ylist = listyHelper(cList,yAcc,0)
+        val xmin = xlist.min; val xmax = xlist.max; val ymin = ylist.min; val ymax = ylist.max
+        val ans = (xmin,xmax,ymin,ymax)
+        ans*/
+
+
+        @tailrec
+                def tHelperX(lis: List[(Double,Double)], n: Int, acc: List[Double]): List[Double] = {
+                    if(n == lis.length - 1){
+                        acc
+                    }else{
+                        val newAcc = acc :+ lis(n)._1 + shiftX
+                        tHelperX(lis,n+1,newAcc)
+                    }
+                }
+
+                @tailrec
+                def tHelperY(lis: List[(Double,Double)], n: Int, acc: List[Double]): List[Double] = {
+                    if(n == lis.length - 1){
+                        acc
+                    }else{
+                        val newAcc = acc :+ lis(n)._2 + shiftX
+                        tHelperY(lis,n+1,newAcc)
+                    }
+                }
+
+                val Acc = List[Double]()
+                val newL = tHelperX(cList, 0, Acc) zip tHelperY(cList, 0, Acc)
+                val poly = new Polygon(newL)
+                poly
