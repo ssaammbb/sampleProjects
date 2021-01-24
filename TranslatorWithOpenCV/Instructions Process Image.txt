@@ -1,0 +1,16 @@
+Instructions to run Process Image 
+
+-There will be an installer that will allow you to install "Image Processor"
+
+-If you don't want to install the program there will be a folder that contains an executable and all the files need to run the program
+
+-Eligible photos to process include "a.jpg", "b.jpg", "c.jpg"
+-"a.png", "b.png", "c.png", "d.png", "e.png", "f.png", "g.png", "h.png", "i.png", "j.png", "k.png", "l.png", "m.png", "n.png", "o.png"
+
+-After an image has been processed, click on an image and press any key on you keyboard to proceed with the program.
+
+-Option 2 prints the entire repository of the DataStrcut
+
+-Option 1 allows you to process an image. you must include the file extension
+
+-Option 3 closes the program

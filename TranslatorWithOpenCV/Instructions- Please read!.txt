@@ -1,0 +1,28 @@
+Welcome to the language tool!
+Created by Justin Deng and Sam Britten
+
+Please watch the OutputVideo mp4 file for a demonstration of our program!
+
+Learning Tool-
+
+To install the learning tool, please go to the folder titled TheLanguageTool and then open the out folder.
+There, you will find an installer for the learning tool. Install the program, and accept the 
+option to make a desktop shortcut if you wish. Now you can open and use the learning app.
+
+Please note, that to compile and run the learning tool code from an IDE, the Qt libraries must 
+be included in your IDE's include directory path, and the Qt library files must be included in
+your IDE's library path. To avoid this, simply use the given installer and run the .exe.
+
+Image Processor-
+
+To install the Image Processor, open the folder titled ProcessImgInstaller, and then open the 
+installer folder. Then run the mysetup application. Now, you'll be able to run the image
+processor.
+
+In the image processor, there are two options. Press 1 to analyze an image, or 2 to print
+the contents of the BST in spanish.
+
+If you choose option 1, then type the name of one of the preloaded images.
+Preloaded images are as follows: a.png, b.png, c.png, d.png, e.png, f.png, g.png, h.png, i.png,
+j.png, k.png, l.png, m.png, n.png and o.png.
+ 

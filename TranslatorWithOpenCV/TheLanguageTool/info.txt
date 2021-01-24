@@ -1,0 +1,5 @@
+The Language Tool
+
+Created by Justin Deng and Sam Britten with Microsoft Visual Studio and Qt
+
+Uses Opencv and Qt libraries 
